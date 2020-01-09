@@ -12,7 +12,7 @@ public class Carro {
 		String marca = sc.nextLine();
 		System.out.println("Modelo do carro: ");
 		String modelo = sc.nextLine();
-		System.out.println("Plca do carro: ");
+		System.out.println("Placa do carro: ");
 		String placa = sc.nextLine();
 		System.out.println("Cor do carro: ");
 		String cor = sc.nextLine();
@@ -81,7 +81,7 @@ public class Carro {
 			}break;
 			
 			default:
-				System.out.println("opção inválida \n");
+				System.out.println(" ");
 			}
 			
 			}while(opAcao != 0);

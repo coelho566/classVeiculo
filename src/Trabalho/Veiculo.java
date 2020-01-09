@@ -119,9 +119,10 @@ public class Veiculo {
 		if(isLigado == true && litrosCombustivel > 0) {
 		setVelocidade(20);
 		setLitrosCombustivel(1);
+		
 	}else {
 		
-		System.out.println("Carro desligado ou sem combustivel!");
+		System.out.println("Carro sem combustivel!");
 	}
 		
 	}
@@ -134,7 +135,7 @@ public class Veiculo {
 			
 		}else {
 			
-			System.out.println("Carro desligado ou abaixo de 10 km");
+			System.out.println("Carro desligado ou abaixo de 10 km \n");
 		}
 	}
 	
