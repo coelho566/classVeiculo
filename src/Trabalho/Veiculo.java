@@ -107,17 +107,21 @@ public class Veiculo {
 		if(isLigado == true) {
 			
 			setLigado(false);
+			
+		}else {
+			
+			System.out.println("Carro já esta deligado!");
 		}
 	}
 
 	public static void acelerar() {
 		
-		if(isLigado == true) {
+		if(isLigado == true && litrosCombustivel > 0) {
 		setVelocidade(20);
 		setLitrosCombustivel(1);
 	}else {
 		
-		System.out.println("Carro desligado!");
+		System.out.println("Carro desligado ou sem combustivel!");
 	}
 		
 	}
@@ -136,13 +140,15 @@ public class Veiculo {
 	
 	public static void abastecer(int qtdLitros) {
 		
-		if(qtdLitros <= 100) {
+		if(qtdLitros <= 100 && isLigado == false) {
 			
-			setLitrosCombustivel(qtdLitros);
+			int tanque = Veiculo.litrosCombustivel += qtdLitros;
+			setLitrosCombustivel(tanque);
+			
 			
 		}else {
 			
-			System.out.println("Quantidade de litros ecedeu!");
+			System.out.println("Desligue o carro para abastecer!");
 		}
 	}
 	
