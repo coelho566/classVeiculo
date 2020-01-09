@@ -136,9 +136,10 @@ public class Veiculo {
 	
 	public static void abastecer(int qtdLitros) {
 		
-		if(qtdLitros >= 100) {
+		if(qtdLitros <= 100) {
 			
 			setLitrosCombustivel(qtdLitros);
+			
 		}else {
 			
 			System.out.println("Quantidade de litros ecedeu!");
@@ -151,20 +152,5 @@ public class Veiculo {
 	
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 }

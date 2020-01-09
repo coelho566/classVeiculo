@@ -17,7 +17,10 @@ public class Carro {
 		System.out.println("3- Trocar cor");
 		System.out.println("4- Abastecer carro");
 		
-		int entrada = sc.nextInt();
+		int entrada;
+		
+		do {
+		entrada = sc.nextInt();
 		
 		switch (entrada) {
 		case 1:  {
@@ -36,6 +39,7 @@ public class Carro {
 			System.out.println("2- Frear carro");
 			
 			int opAcao = sc.nextInt();
+			
 			
 			switch (opAcao) {
 			
@@ -63,8 +67,8 @@ public class Carro {
 		
 		case 3: {
 			
-			System.out.println("Digite uma nova cor para se carro: \n");
-			String cor = sc.nextLine();
+			System.out.println("Digite uma nova cor para o carro: \n");
+			String cor = sc.next();
 			Veiculo.pintar(cor);
 			
 		}break;
@@ -82,7 +86,7 @@ public class Carro {
 			System.out.println("Opção inválida! \n");
 		}
 		
-		
+		}while(entrada != 0);
 	}
 
 }
